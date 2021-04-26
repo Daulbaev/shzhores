@@ -29,8 +29,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     print(args.arguments)
 
-    s = f"""
-#!/bin/bash
+    s = f"""#!/bin/bash
 #SBATCH -N {args.N}
 #SBATCH --job-name {args.job_name}
 #SBATCH -c {args.c}
