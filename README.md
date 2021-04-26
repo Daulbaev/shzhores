@@ -1,2 +1,2 @@
 # shzhores
-SLURM .sh file generator
+SLURM .sh file generator for Zhores
