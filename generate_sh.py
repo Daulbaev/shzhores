@@ -56,6 +56,7 @@ done\n\n'''
         s += f"module load {module}\n"
     if args.wandb_hash is not None:
         s += f"wandb login {args.wandb_hash}\n\n"
+    s += "singularity exec /trinity/shared/singularity-images/NGC/pytorch_20.12-py3.simg bash\n"
     s_call = f"python3 {args.script_name} "
     for a in args.arguments:
         if len(a) == 1:
